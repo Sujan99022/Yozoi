@@ -1,0 +1,439 @@
+.ourtech_body {
+    background: rgb(248, 248, 248);
+}
+.ourtech_hero_section {
+    height: 60vh;
+    background: url("https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2020/05/robot-thinking.jpg?fit=3558%2C2092&ssl=1");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ourtech_hero_section_blur_bg {
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.455);
+}
+#ourtech_hero_section_heading_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#ourtech_hero_section_heading_container > h4 {
+    font-size: 50px;
+    color: white;
+}
+
+.flex_gap {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+}
+#outtech_col_1 {
+    padding: 10px 30px;
+}
+.outtech_col-left_text > p {
+    text-align: justify;
+    font-weight: 500;
+}
+.outtech_col-right_text {
+    text-align: justify;
+    font-weight: 500;
+}
+.outtech_col-right_image {
+    position: relative;
+}
+.piece_one_right {
+    position: absolute;
+    z-index: -999;
+    top: 0;
+    left: 50px;
+    border-radius: 10px;
+    height: 45px;
+    width: 150px;
+    background-color: rgb(58, 58, 58);
+}
+.piece_one_left {
+    position: absolute;
+    z-index: -999;
+    top: 0;
+    right: 50px;
+    border-radius: 10px;
+    height: 45px;
+    width: 150px;
+    background-color: rgb(58, 58, 58);
+}
+.outtech_col-right_image {
+    display: flex;
+    justify-content: center;
+}
+.piece_two_img_1 {
+    z-index: 999;
+    margin-top: 28px;
+    margin-left: 70px;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    border: 7px solid white;
+    background: url("https://yozoi.com/static/media/our%20technology.2c34d1c35ca67e3b0bb3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.226);
+}
+.piece_two_img_2 {
+    z-index: 999;
+    position: absolute;
+    margin-top: 28px;
+    right: 125px;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    border: 7px solid white;
+    background: url("https://yozoi.com/static/media/ai.f3acdbd3399e258ce924.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.226);
+}
+.piece_two_img_3 {
+    z-index: 999;
+    margin-top: 25px;
+    border-radius: 10px;
+    margin-left: 100px;
+    height: 300px;
+    width: 300px;
+    border: 7px solid white;
+    background: url("https://yozoi.com/static/media/safety-1.6855eaf81de14375ff27.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.226);
+}
+.piece_third_right {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    left: 80px;
+    z-index: 99999999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.264);
+}
+.piece_third_right_last {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    left: 60px;
+    z-index: 99999999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.264);
+}
+.piece_third_left {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    right: 80px;
+    z-index: 99999999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.264);
+}
+.img_img_right {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: gray;
+}
+.img_img_right > img {
+    height: 100%;
+    width: 100%;
+}
+#last-row {
+    margin-top: 80px;
+}
+
+.keyless_header {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.keyless_header > h2 {
+    font-size: 40px;
+}
+.keyless_header > div {
+    height: 3px;
+    width: 60px;
+    background-color: black;
+    border-radius: 50px;
+}
+.key_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.key_image_first_p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 90px;
+}
+.ourtech_cards_aware_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.ourtech_cards_aware {
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    border: 2px solid rgba(235, 235, 235, 0.853);
+}
+.ourtech_cards_aware_f_p {
+    display: inline;
+    color: white;
+    padding: 5px 30px;
+    font-size: 14px;
+    border-radius: 50px;
+    background: black;
+}
+.ourtech_cards_aware_s_p {
+    font-weight: bold;
+}
+
+.ourtech_card {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.single_ourtech_card {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 10px;
+}
+.ourtech_card_image {
+    border-radius: 10px;
+    width: 100%;
+    height: 370px;
+    z-index: -999;
+    position: relative;
+}
+.ourtech_card_image > h3 {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    font-size: 22px;
+    max-width: 350px;
+    color: white;
+    z-index: 9999;
+}
+#outertech_all_post_cards_container {
+    padding: 0 120px;
+}
+.ourtech_url_1 {
+    background: url("https://yozoi.com/static/media/Service%20tracking.67b69363c2e4b58af641.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ourtech_url_2 {
+    background: url("https://yozoi.com/static/media/Personalised%20service%20plans.c79f5c16803d23ffee0f.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ourtech_url_3 {
+    background: url("https://yozoi.com/static/media/Customer%20health.824b8593ddea107ba979.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ourtech_url_4 {
+    background: url("https://yozoi.com/static/media/Family%20access.6c970737e10bd40542f3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ourtech_url_5 {
+    background: url("https://yozoi.com/static/media/Service%20provider%20ratings.2ea294999f79d47a76f7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ourtech_url_6 {
+    background: url("https://yozoi.com/static/media/Service%20provider%20training.7703d23ae9be5b8b6b39.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ourtech_url_7 {
+    background: url("https://yozoi.com/static/media/Reporting.dbb082c6302cc05129ea.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ourtech_url_8 {
+    background: url("https://yozoi.com/static/media/Payment%20automation.a572294c088e969f5e21.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ourtech_card_image_content {
+    margin-top: 10px;
+    width: 560px;
+    display: flex;
+}
+._hr_bar {
+    margin-top: 10px;
+    width: 40px;
+    height: 3px;
+    background: black;
+}
+.ourtech_card_image_content_text {
+    max-width: 100%;
+}
+.ourtech_card_image_content_text > p {
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: justify;
+}
+.ourtech_card_image_content_text > h6 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.outtech_col-left_image {
+    position: relative;
+}
+#image_2,
+#image_3 {
+    display: block;
+}
+
+@media (max-width: 1100px) {
+    .ourtech_hero_section {
+        height: 50vh;
+    }
+    #ourtech_hero_section_heading_container > h4 {
+        font-size: 35px;
+    }
+    .flex_gap {
+        gap: 0px;
+        padding: 60px 5px;
+    }
+    outtech_col-left_text > h3 {
+        font-size: 20px;
+    }
+    .outtech_col-left_text > p {
+        font-size: 15px;
+    }
+    ._row_tech {
+        margin-top: 20px;
+    }
+    #image_2,
+    #image_3 {
+        display: none;
+    }
+    #first {
+        margin-bottom: 150px;
+    }
+    .key_image {
+        width: 100%;
+        height: 100%;
+    }
+    .key_image > img {
+        width: 100%;
+        height: 100%;
+    }
+    .key_image_first_p {
+        padding: 12px 3px;
+        font-size: 16px;
+    }
+    .keyless_header {
+        gap: 2px;
+    }
+    .keyless_header > h2 {
+        font-size: 30px;
+        padding: 5px 0;
+    }
+    .ourtech_cards_aware {
+        margin: 0;
+        margin-top: 10px;
+        font-size: 17px;
+        width: 100%;
+        height: 100%;
+    }
+    .single_ourtech_card {
+        max-width: 100vw;
+        height: 410px;
+        padding: 0 4px;
+    }
+    #outertech_all_post_cards_container {
+        padding: 0;
+    }
+    .ourtech_card {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .ourtech_card_image {
+        border-radius: 10px;
+    }
+    .ourtech_card_image > h3 {
+        bottom: 10px;
+        left: 25px;
+    }
+    .ourtech_card_image_content_text > p {
+        margin-left: 20px;
+        font-size: 17px;
+        font-weight: 400;
+        max-width: 70vw;
+        text-align: justify;
+    }
+    .ourtech_card_image_content_text > h6 {
+        font-weight: bold;
+        font-size: 18px;
+        max-width: 100vw;
+        margin-left: 20px;
+    }
+}
+@media (max-width: 800px) {
+    .ourtech_hero_section {
+        height: 30vh;
+    }
+}

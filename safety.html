@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yozoi | Safety</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <script
+      src="https://kit.fontawesome.com/726b0b9ea4.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./safety.css" />
+  </head>
+  <body class="safety_body">
+    <!-- Navbar -->
+    <section>
+        <nav class="navbar">
+          <div class="container px-4">
+            <div class="left_nav">
+              <a href="./index.html" style="color: white;"><h2 class="logo">Yozoi</h2></a>
+              <div class="company_btn_container rel_ative hide">
+                <button class="nav_btn company_btn">
+                  Company <i class="fa-solid fa-caret-down ml-2"></i>
+                </button>
+                <div class="company-slider">
+                    <a class="option" href="./company/aboutus.html">About us</a>
+                  <a href="./company/ourtech.html" class="option" value="">Our Technology</a>
+                  <a href="./company/howwework.html" class="option" value="">How we work</a>
+                  <a href="./company/whywork.html" class="option" value="">Why work at Yozoi</a>
+                </div>
+              </div>
+              <a href="./safety.html"><button class="nav_btn safety_btn hide">Safety</button></a>
+            </div>
+            <div class="mobile_menu" onclick={handleMenu()}>
+              <i class="fa-solid fa-bars menu_icon"></i>
+            </div>
+            <div class="right_nav hide">
+              <div class="services_btn_container rel_ative">
+                <button class="nav_btn services_btn">
+                  Services <i class="fa-solid fa-caret-down ml-2"></i>
+                </button>
+                <div class="services-slider">
+                  <section class="services_HomeSupportVisits rel_ative">
+                    <a href="./services/homesupport.html" class="option" value="">
+                      Home Support Visits
+                      <i class="fa-solid fa-angles-right r-arrow"></i>
+                    </a>
+                    <div class="services_HomeSupportVisits-slider second_slider">
+                      <a href="/services/homesupport.html#one" class="option">Bedding</a>
+                      <a href="/services/homesupport.html#two" class="option">Cleaning</a>
+                      <a href="/services/homesupport.html#three" class="option">Footcare</a>
+                      <a href="/services/homesupport.html#four" class="option">Gardening</a>
+                      <a href="/services/homesupport.html#five" class="option">Haircare</a>
+                      <a href="/services/homesupport.html#six" class="option">Handyperson</a>
+                      <a href="/services/homesupport.html#seven" class="option">Laundry</a>
+                      <a href="/services/homesupport.html#eight" class="option">Mobility assistance</a>
+                      <a href="/services/homesupport.html#nine" class="option">Pets</a>
+                      <a href="/services/homesupport.html#ten" class="option">Preparing meals</a>
+                      <a href="/services/homesupport.html#eleven" class="option">Shopping meals</a>
+                      <a href="/services/homesupport.html#twelve" class="option">Security assistance</a>
+                    </div>
+                  </section>
+                  <section class="services_Companionship rel_ative">
+                    <a href="./services/companion.html" class="option">
+                      Companionship
+                      <i class="fa-solid fa-angles-right r-arrow"></i>
+                    </a>
+                    <div class="services_Companionship-slider second_slider">
+                      <a href="./services/companion.html#one" class="option">Accompanying</a>
+                      <a href="./services/companion.html#two" class="option">Cafes & restaurants</a>
+                      <a href="./services/companion.html#three" class="option">Keep fit</a>
+                      <a href="./services/companion.html#four" class="option">Social activities</a>
+                      <a href="./services/companion.html#five" class="option">Vists to medics</a>
+                    </div>
+                  </section>
+                  <section class="services_Aware rel_ative">
+                    <a href="/services/awarehomesystem.html" class="option">
+                      Aware home system
+                      <i class="fa-solid fa-angles-right r-arrow"></i>
+                    </a>
+                    <div class="services_Aware-slider second_slider">
+                      <a href="/services/awarehomesystem.html#one" class="option">Accident detection</a>
+                      <a href="/services/awarehomesystem.html#two" class="option">Intrution detection</a>
+                      <a href="/services/awarehomesystem.html#three" class="option">Wellbeing security</a>
+                    </div>
+                  </section>
+                  <section class="services_Child rel_ative">
+                    <a href="/services/childcare.html" class="option">
+                      Child Care <i class="fa-solid fa-angles-right r-arrow"></i>
+                    </a>
+                    <div class="services_Child-slider second_slider">
+                      <a href="/services/childcare.html#one" class="option">Philosophy</a>
+                      <a href="/services/childcare.html#two" class="option">School pick-up & care</a>
+                      <a href="/services/childcare.html#three" class="option">Home care visits</a>
+                      <a href="/services/childcare.html#four" class="option">Activities</a>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <button class="login_btn">Login</button>
+              <button class="signup_btn">Sign up</button>
+            </div>
+          </div>
+        </nav>
+        <div class="lists_container">
+          <div class="lists">
+            <div class="menu_lists menu_lists_company">
+              <p class="menu_safety_btn menu_btn m-0 p-0">
+                Company <i class="fa-solid fa-caret-down ml-2"></i>
+              </p>
+              <div
+                class="menu_icon_options_container menu_company_container_slider"
+              >
+              <a href="./company/aboutus.html"><li class="option">sAbout us</li></a>
+                <li class="menu_icon_options">Our technology</li>
+                <li class="menu_icon_options">How we work</li>
+                <li class="menu_icon_options">Wy work at Yozoi</li>
+              </div>
+            </div>
+            <div class="menu_lists">
+              <p class="menu_btn m-0 p-0">Safety</p>
+            </div>
+            <div class="menu_lists menu_lists_services">
+              <p class="menu_services_btn menu_btn m-0 p-0">
+                Services <i class="fa-solid fa-caret-down ml-2 mr-0"></i>
+              </p>
+              <div
+                class="menu_icon_options_container menu_services_container_slider"
+              >
+                <li class="menu_icon_options">Home Visits</li>
+                <li class="menu_icon_options">Companionship</li>
+                <li class="menu_icon_options">Aware home system</li>
+                <li class="menu_icon_options">Child Care</li>
+              </div>
+            </div>
+            <div class="menu_lists">
+              <p class="menu_login_btn p-0 m-0">Login</p>
+            </div>
+            <div class="menu_lists">
+              <button class="menu_signup_btn">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Navbar End -->
+      <section>
+          <div class="safety_hero_section">
+            <div class="saftey_merge_shadow"></div>
+              <div class="safety_hero_section_blur_bg">
+                  <div class="container" id="safety_hero_section_heading_container">
+                    <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">Safety</h4>
+                  </div> 
+              </div>  
+          </div>
+      </section>
+      <section>
+        <div class="safety_content_after_hero_sec">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12" id="safety_content_left">
+                    <div class="safety_content_left_img_container">
+                        <div class="left_safy_img" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                            <img src="https://yozoi.com/static/media/safety%201.2e979b678dd9f9e3f199.png" alt="img">
+                        </div>
+                        <div class="right_safy_img">
+                            <div class="right_safy_img_ch1" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true"></div>
+                            <div class="right_safy_img_ch2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mt-4 mt-lg-0" id="safety_content_right">
+                        <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Our dedication to ensuring your safety</h3>
+                        <p data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">We believe our customers and service providers deserve to receive and provide services to improve quality of life and to do so safely. Therefore, we are dedicated to your safety, from applying best possible standards and regulatory frameworks to embedding latest technologies in our app, all with the aim of ensure safety and wellbeing of both customers and service providers.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="safety_section_3_title" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Safety is built into our services</h2>
+        <div class="container-fluid px-md-5 px-2" id="sefty_section_comment_container">
+            <div class="seafty_features" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="safety_images">
+                    <img src="https://yozoi.com/static/media/Features%20Of%20Yozoi%20App.8ce6c9143b09741aa63c38d05dfa6b51.svg" alt="img">
+                </div>
+                <h3>Features of Yozoi app</h3>
+                <p>Our app provides the ultimate in safety for customers and service providers through latest technology in sensors,</p>
+                <p class="readmore">Readmore</p>
+            </div>
+            <div class="seafty_features" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="safety_images">
+                    <img src="https://yozoi.com/static/media/Security%20Clearance.c1daaba7f66785ea9ab5614f27931d85.svg" alt="img">
+                </div>
+                <h3>Security clearance</h3>
+                <p>All service providers undergo safety checks involving verification of identity, address and residential status and checks on any criminal history.</p>
+                <p class="readmore">Readmore</p>
+            </div>
+            <div class="seafty_features" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="safety_images">
+                    <img src="https://yozoi.com/static/media/Real%20Time%20Identity%20Checks.aeaaae3ca9e946b75bf48132b83dc9d5.svg" alt="img">
+                </div>
+                <h3>Real time identity checks</h3>
+                <p>Yozoi conducts real-time identity check where a service provider is randomly selected and asked to take in real-time picture of themselves and the picture is then compared to their stored identity data.</p>
+                <p class="readmore">Readmore</p>
+            </div>
+            <div class="seafty_features" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="safety_images">
+                    <img src="https://yozoi.com/static/media/Support.0e9b9a789d65ef36e2c9919c093768ec.svg" alt="img">
+                </div>
+                <h3>Support</h3>
+                <p>Service providers can request support 24/7 from a specially trained team that can be contacted day or</p>
+                <p class="readmore">Readmore</p>
+            </div>
+            <div class="seafty_features" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="safety_images">
+                    <img src="https://yozoi.com/static/media/Emergency%20Assistance.e29ef75fe2746857ce77c1e473faa141.svg" alt="img">
+                </div>
+                <h3>Emergency assistance</h3>
+                <p>Customers and service providers can both tap a button for emergency assistance, Yozoi app responds according to specific protocols personalised for given customers and service providers.</p>
+                <p class="readmore">Readmore</p>
+            </div>
+            <div class="seafty_features" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="safety_images">
+                    <img src="https://yozoi.com/static/media/Yozoi%20Community%20Support.6cf5984e12ce275d6d9d2ff7b6faba74.svg" alt="img">
+                </div>
+                <h3>Yozoi community support</h3>
+                <p>We are building a community of thousands of customers and service providers to share experiences and</p>
+                <p class="readmore">Readmore</p>
+            </div>
+            <div class="seafty_features" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="safety_images">
+                    <img src="https://yozoi.com/static/media/Family%20Member%20Oversight.0e4b2f14578ef7594d0e2114e942f8dc.svg" alt="img">
+                </div>
+                <h3>Family member oversight</h3>
+                <p>Yozoi app offers functionality enabling customers to nominate family or friends to keep oversight of</p>
+                <p class="readmore">Readmore</p>
+            </div>
+            <div class="seafty_features" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="safety_images">
+                    <img src="https://yozoi.com/static/media/2-Way%20Ratings.a85b3914f44e3d05db6fb128233b7027.svg" alt="img">
+                </div>
+                <h3>2-Way ratings</h3>
+                <p>Yozoi app allows customers and service providers to provide feedback and rating on each other.</p>
+                <p class="readmore">Readmore</p>
+            </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="mt-2 mt-md-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <h3 class="footer_header">Learn more</h3>
+              <p class="footer_links">About us</p>
+              <p class="footer_links">Terms of service</p>
+              <p class="footer_links">Privacy policy</p>
+            </div>
+            <div class="col-md-4 col-12">
+              <h3 class="footer_header">Stay Connected</h3>
+                <div class="footer_contact_image_container">
+                    <div class="social_media">
+                        <img class="social_media_images" src="https://th.bing.com/th/id/OIP.qAvEb6dwa1l715giSS_qBAHaHa?rs=1&pid=ImgDetMain" alt="img">
+                    </div>    
+                    <div class="social_media">
+                        <img class="social_media_images" src="https://th.bing.com/th/id/OIP.o14JzjLzTuJVajpifYmsnQAAAA?rs=1&pid=ImgDetMain" alt="img">
+                    </div>    
+                    <div class="social_media">
+                        <img class="social_media_images" src="https://th.bing.com/th/id/OIP._oZTXnKqU0BjPIMZdPf2fwHaHa?rs=1&pid=ImgDetMain" alt="img">
+                    </div>    
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <h3 class="footer_header">Contact us</h3>
+              <p class="footer_links"><i class="fa-solid fa-envelope mr-2"></i> info@yozoi.com</p>
+              <p class="footer_links"><i class="fa-solid fa-location-arrow mr-2"></i> Yozoi Limited
+                124 City Road
+                London EC4V 2NX
+                United Kingdom</p>
+            </div>
+            <div class="col-12 footer_last_sec mt-3">
+              <h2>Yozoi</h2>
+              <p>Get it on</p>
+              <div class="download_playstore">
+                  <div class="playstore">
+                    <img src="https://sattva.life/images/contents_v4/banner-playstore.png" alt="google playstore">
+                  </div>
+                  <div class="playstore">
+                    <img src="https://purp.social/static/media/appStore2.3cbf9f87.png" alt="apple store">
+                  </div>
+              </div>
+              <p class="copy_write">@ 2023 Yozoi Limited</p>
+            </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>

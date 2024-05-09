@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yozoi | Our technology</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <script
+      src="https://kit.fontawesome.com/726b0b9ea4.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="./ourtech.css" />
+  </head>
+  <body class="ourtech_body">
+    <section>
+      <nav class="navbar">
+        <div class="container px-4">
+          <div class="left_nav">
+            <a href="../index.html" style="color: white;"><h2 class="logo">Yozoi</h2></a>
+            <div class="company_btn_container rel_ative hide">
+              <button class="nav_btn company_btn">
+                Company <i class="fa-solid fa-caret-down ml-2"></i>
+              </button>
+              <div class="company-slider">
+                <a href="./aboutus.html" class="option">About us</a>
+                <a href="./ourtech.html" class="option">Our Technology</a>
+                <a href="./howwework.html" class="option">How we work</a>
+                <a href="./whywork.html" class="option" value="">Why work at Yozoi</a>
+              </div>
+            </div>
+            <a href="../safety.html" class="nav_btn safety_btn hide">Safety</a>
+          </div>
+          <div class="mobile_menu" onclick={handleMenu()}>
+            <i class="fa-solid fa-bars menu_icon"></i>
+          </div>
+          <div class="right_nav hide">
+            <div class="services_btn_container rel_ative">
+              <button class="nav_btn services_btn">
+                Services <i class="fa-solid fa-caret-down ml-2"></i>
+              </button>
+              <div class="services-slider">
+                <section class="services_HomeSupportVisits rel_ative">
+                  <a href="../services/homesupport.html" class="option" value="">
+                    Home Support Visits
+                    <i class="fa-solid fa-angles-right r-arrow"></i>
+                  </a>
+                  <div class="services_HomeSupportVisits-slider second_slider">
+                    <a href="/services/homesupport.html#one" class="option">Bedding</a>
+                    <a href="/services/homesupport.html#two" class="option">Cleaning</a>
+                    <a href="/services/homesupport.html#three" class="option">Footcare</a>
+                    <a href="/services/homesupport.html#four" class="option">Gardening</a>
+                    <a href="/services/homesupport.html#five" class="option">Haircare</a>
+                    <a href="/services/homesupport.html#six" class="option">Handyperson</a>
+                    <a href="/services/homesupport.html#seven" class="option">Laundry</a>
+                    <a href="/services/homesupport.html#eight" class="option">Mobility assistance</a>
+                    <a href="/services/homesupport.html#nine" class="option">Pets</a>
+                    <a href="/services/homesupport.html#ten" class="option">Preparing meals</a>
+                    <a href="/services/homesupport.html#eleven" class="option">Shopping meals</a>
+                    <a href="/services/homesupport.html#twelve" class="option">Security assistance</a>
+                  </div>
+                </section>
+                <section class="services_Companionship rel_ative">
+                  <a href="/services/companion.html" class="option">
+                    Companionship
+                    <i class="fa-solid fa-angles-right r-arrow"></i>
+                  </a>
+                  <div class="services_Companionship-slider second_slider">
+                    <a href="/services/companion.html#one" class="option">Accompanying</a>
+                    <a href="/services/companion.html#two" class="option">Cafes & restaurants</a>
+                    <a href="/services/companion.html#three" class="option">Keep fit</a>
+                    <a href="/services/companion.html#four" class="option">Social activities</a>
+                    <a href="/services/companion.html#five" class="option">Vists to medics</a>
+                  </div>
+                </section>
+                <section class="services_Aware rel_ative">
+                  <a href="/services/awarehomesystem.html" class="option">
+                    Aware home system
+                    <i class="fa-solid fa-angles-right r-arrow"></i>
+                  </a>
+                  <div class="services_Aware-slider second_slider">
+                    <a href="/services/awarehomesystem.html#one" class="option">Accident detection</a>
+                    <a href="/services/awarehomesystem.html#two" class="option">Intrution detection</a>
+                    <a href="/services/awarehomesystem.html#three" class="option">Wellbeing security</a>
+                  </div>
+                </section>
+                <section class="services_Child rel_ative">
+                  <a href="/services/childcare.html" class="option">
+                    Child Care <i class="fa-solid fa-angles-right r-arrow"></i>
+                  </a>
+                  <div class="services_Child-slider second_slider">
+                    <a href="/services/childcare.html#one" class="option">Philosophy</a>
+                    <a href="/services/childcare.html#two" class="option">School pick-up & care</a>
+                    <a href="/services/childcare.html#three" class="option">Home care visits</a>
+                    <a href="/services/childcare.html#four" class="option">Activities</a>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <button class="login_btn">Login</button>
+            <button class="signup_btn">Sign up</button>
+          </div>
+        </div>
+      </nav>
+      <div class="lists_container">
+        <div class="lists">
+          <div class="menu_lists menu_lists_company">
+            <p class="menu_safety_btn menu_btn m-0 p-0">
+              Company <i class="fa-solid fa-caret-down ml-2"></i>
+            </p>
+            <div
+              class="menu_icon_options_container menu_company_container_slider"
+            >
+              <li class="menu_icon_options">About us</li>
+              <li class="menu_icon_options">Our technology</li>
+              <li class="menu_icon_options">How we work</li>
+              <li class="menu_icon_options">Wy work at Yozoi</li>
+            </div>
+          </div>
+          <div class="menu_lists">
+            <p class="menu_btn m-0 p-0">Safety</p>
+          </div>
+          <div class="menu_lists menu_lists_services">
+            <p class="menu_services_btn menu_btn m-0 p-0">
+              Services <i class="fa-solid fa-caret-down ml-2 mr-0"></i>
+            </p>
+            <div
+              class="menu_icon_options_container menu_services_container_slider"
+            >
+              <li class="menu_icon_options">Home Visits</li>
+              <li class="menu_icon_options">Companionship</li>
+              <li class="menu_icon_options">Aware home system</li>
+              <li class="menu_icon_options">Child Care</li>
+            </div>
+          </div>
+          <div class="menu_lists">
+            <p class="menu_login_btn p-0 m-0">Login</p>
+          </div>
+          <div class="menu_lists">
+            <button class="menu_signup_btn">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NavbarEnded -->
+
+
+    <section>
+        <div class="ourtech_hero_section">
+          <div class="ourtech_merge_shadow"></div>
+            <div class="ourtech_hero_section_blur_bg">
+                <div class="container" id="ourtech_hero_section_heading_container">
+                  <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">Our technology</h4>
+                </div> 
+            </div>  
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="flex_gap">
+            <div class="row _row_tech" id="first">
+                <div class="col-md-6 col-12 order-0 outtech_col-left_text" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <p>Yozoi’s is developing a services model based on a mobile applications platform comprising a deep technology back-end working in tandem with a human front-end. We believe that such a hybrid model can fulfil the domiciliary support services needs of modern societies.</p>
+                    <p>We aim to continuously improving and developing our mobile applications platform in line with the latest developments in sensors, IoT, big data and artificial intelligence technology. The current target features of the Yozoi platform are described below.</p>
+                </div>
+                <div class="col-md-6 col-12 order-1 outtech_col-right_image mt-3 mt-lg-0">
+                    <div class="piece_one_right" data-aos="slide-right" data-aos-duration="1000" data-aos-once="true"></div>
+                    <div class="piece_two_img_1" data-aos="fade-out" data-aos-duration="1000" data-aos-once="true"></div>
+                    <div class="piece_third_right" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true">
+                        <div class="img_img_right">
+                            <img src="https://yozoi.com/static/media/technology%20icon.06b6d16ce0ed40fec159a836f249f69e.svg" alt="img">
+                        </div>
+                        <h5>Our Technology</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row _row_tech">
+                <div class="col-md-6 col-12 order-1 order-md-0 outtech_col-left_image" id="image_2">
+                    <div class="piece_one_left" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true"></div>
+                    <div class="piece_two_img_2" data-aos="fade-out" data-aos-duration="1000" data-aos-once="true"></div>
+                    <div class="piece_third_left" data-aos="slide-right" data-aos-duration="1000" data-aos-once="true">
+                        <div class="img_img_right">
+                            <img src="https://yozoi.com/static/media/ai%20icon.4f133cd25b141b52b027ec93f152eb34.svg" alt="img">
+                        </div>
+                        <h5>AI mobile app</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 order-0 order-md-1 outtech_col-right_text" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <h3 class="left_right_heading">AI driven mobile app</h3>
+                    <p>Yozoi’s is developing a services model based on a mobile applications platform comprising a deep technology back-end working in tandem with a human front-end. We believe that such a hybrid model can fulfil the domiciliary support services needs of modern societies.</p>
+                    <p>We aim to continuously improving and developing our mobile applications platform in line with the latest developments in sensors, IoT, big data and artificial intelligence technology. The current target features of the Yozoi platform are described below.</p>
+                </div>
+            </div>
+            <div class="row _row_tech" id="last-row">
+                <div class="col-md-6 col-12 order-0 outtech_col-left_text" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <h3 class="left_right_heading">Safety & security</h3>
+                    <p>Yozoi app compares service providers face pictures in real-time against national identity documents such as passports to verify identity. Next, the app verifies residential addresses against utility bills and bank account statements. The app also checks national databases for any criminal history, for example in UK, we check DBS certificates, criminal convictions and credit rating. After registration of service providers, the app automatically conducts criminal checks on a regular basis for the detection of any emerging criminality. The customers are also subjected to a similar procedure of checking identity, addresses and any evidence of criminality or insolvency. Any service providers or customers failing such tests are not permitted to join Yozoi. Any service providers or customers who are members of Yozoi and fail any of the regular security checks, will have their membership cancelled. By applying such stringent procedures, we ensure that customers and service providers can operate in a safe and secure manner.</p>
+                </div>
+                <div class="col-md-6 col-12 order-1  outtech_col-right_image" id="image_3">
+                    <div class="piece_one_right" data-aos="slide-right" data-aos-duration="1000" data-aos-once="true"></div>
+                    <div class="piece_two_img_3" data-aos="fade-out" data-aos-duration="1000" data-aos-once="true"></div>
+                    <div class="piece_third_right_last" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true">
+                        <div class="img_img_right">
+                            <img src="https://yozoi.com/static/media/safety%20icon.00d68fc2e11e77adc952160a14d156ee.svg" alt="img">
+                        </div>
+                        <h5>Safety & security</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section style="background-color: white;">
+        <div class="container">
+            <div class="keyless_header" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <h2>Keyless entry</h2>
+                <div class="div_dash"></div>
+            </div>
+            <div class="keyless_section">
+                <div class="key_image" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <img src="https://yozoi.com/static/media/keyless%20entry.19392ae9b63f195b32c8.png" alt="img">
+                </div>
+                <p class="key_image_first_p" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">A part of our Aware Home technology system is keyless entry equipment that once installed in the customers home, allows Yozoi app to:</p>
+                <div class="ourtech_cards_aware_container">
+                    <div class="ourtech_cards_aware mt-3 mt-md-0" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                        <p class="ourtech_cards_aware_f_p">1</p>
+                        <p class="ourtech_cards_aware_s_p mt-2 text-center">
+                            Conduct identity test in real-time on the service provider at the doorstep of the customer’s home
+                        </p>
+                    </div>
+                    <div class="ourtech_cards_aware mt-3 mt-md-0" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                        <p class="ourtech_cards_aware_f_p">2</p>
+                        <p class="ourtech_cards_aware_s_p mt-2 text-center">
+                            Give keyless entry to the service provide once he/she has passed the test
+                        </p>
+                    </div>
+                    <div class="ourtech_cards_aware mt-3 mt-md-0" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                        <p class="ourtech_cards_aware_f_p">3</p>
+                        <p class="ourtech_cards_aware_s_p mt-2 text-center">
+                            Let service provider enter your home if you are unable to open the door or if there is an emergency
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid" id="outertech_all_post_cards_container">
+            <div class="ourtech_card">
+                <div class="single_ourtech_card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="ourtech_card_image ourtech_url_1 ">
+                    <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Service tracking</h3>
+                </div>
+                <div class="ourtech_card_image_content">
+                    <div class="_hr_bar"></div>
+                    <div class="ourtech_card_image_content_text">
+                        <p>Yozoi app can track the presence and movements of the service providers in the customers’ homes.</p>
+                        <h6>Readmore</h6>
+                    </div>
+                </div>
+            </div>
+                <div class="single_ourtech_card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="ourtech_card_image ourtech_url_2">
+                    <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Personalised service plans</h3>
+                </div>
+                <div class="ourtech_card_image_content">
+                    <div class="_hr_bar"></div>
+                    <div class="ourtech_card_image_content_text">
+                        <p>Customer or family and friends can access the app upon the customer’s permission.</p>
+                        <h6>Readmore</h6>
+                    </div>
+                </div>
+            </div>
+                <div class="single_ourtech_card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="ourtech_card_image ourtech_url_3">
+                    <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Customer health and wellbeing management</h3>
+                </div>
+                <div class="ourtech_card_image_content">
+                    <div class="_hr_bar"></div>
+                    <div class="ourtech_card_image_content_text">
+                        <p>Yozoi provides support in real-time for independent living, health insights & early actions to improve wellbeing of senior citizens.</p>
+                        <h6>Readmore</h6>
+                    </div>
+                </div>
+            </div>
+                <div class="single_ourtech_card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="ourtech_card_image ourtech_url_4">
+                    <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Family access</h3>
+                </div>
+                <div class="ourtech_card_image_content">
+                    <div class="_hr_bar"></div>
+                    <div class="ourtech_card_image_content_text">
+                        <p>Customer can give access to his/her account to a proxy who can be a family member or a friend.</p>
+                        <h6>Readmore</h6>
+                    </div>
+                </div>
+            </div>
+                <div class="single_ourtech_card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="ourtech_card_image ourtech_url_5">
+                    <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Service provider training</h3>
+                </div>
+                <div class="ourtech_card_image_content">
+                    <div class="_hr_bar"></div>
+                    <div class="ourtech_card_image_content_text">
+                        <p>On delivery of a service, the service provider is given a performance rating by the customer or the customer’s proxy.</p>
+                        <h6>Readmore</h6>
+                    </div>
+                </div>
+            </div>
+                <div class="single_ourtech_card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="ourtech_card_image ourtech_url_6">
+                    <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Reporting</h3>
+                </div>
+                <div class="ourtech_card_image_content">
+                    <div class="_hr_bar"></div>
+                    <div class="ourtech_card_image_content_text">
+                        <p>We offer free training to service providers to help them improve their service delivery.</p>
+                        <h6>Readmore</h6>
+                    </div>
+                </div>
+            </div>
+                <div class="single_ourtech_card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="ourtech_card_image ourtech_url_7">
+                    <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Payment automation</h3>
+                </div>
+                <div class="ourtech_card_image_content">
+                    <div class="_hr_bar"></div>
+                    <div class="ourtech_card_image_content_text">
+                        <p>Yozoi app requires post-service reporting by service providers. The app enables service providers to complete service reports.</p>
+                        <h6>Readmore</h6>
+                    </div>
+                </div>
+            </div>
+                <div class="single_ourtech_card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="ourtech_card_image ourtech_url_8">
+                    <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Service tracking</h3>
+                </div>
+                <div class="ourtech_card_image_content">
+                    <div class="_hr_bar"></div>
+                    <div class="ourtech_card_image_content_text">
+                        <p>A service duration is timed by the Yozoi app and the type of service is also recorded.</p>
+                        <h6>Readmore</h6>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="mt-2 mt-md-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <h3 class="footer_header">Learn more</h3>
+              <p class="footer_links">About us</p>
+              <p class="footer_links">Terms of service</p>
+              <p class="footer_links">Privacy policy</p>
+            </div>
+            <div class="col-md-4 col-12">
+              <h3 class="footer_header">Stay Connected</h3>
+                <div class="footer_contact_image_container">
+                    <div class="social_media">
+                        <img class="social_media_images" src="https://th.bing.com/th/id/OIP.qAvEb6dwa1l715giSS_qBAHaHa?rs=1&pid=ImgDetMain" alt="img">
+                    </div>    
+                    <div class="social_media">
+                        <img class="social_media_images" src="https://th.bing.com/th/id/OIP.o14JzjLzTuJVajpifYmsnQAAAA?rs=1&pid=ImgDetMain" alt="img">
+                    </div>    
+                    <div class="social_media">
+                        <img class="social_media_images" src="https://th.bing.com/th/id/OIP._oZTXnKqU0BjPIMZdPf2fwHaHa?rs=1&pid=ImgDetMain" alt="img">
+                    </div>    
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <h3 class="footer_header">Contact us</h3>
+              <p class="footer_links"><i class="fa-solid fa-envelope mr-2"></i> info@yozoi.com</p>
+              <p class="footer_links"><i class="fa-solid fa-location-arrow mr-2"></i> Yozoi Limited
+                124 City Road
+                London EC4V 2NX
+                United Kingdom</p>
+            </div>
+            <div class="col-12 footer_last_sec mt-3">
+              <h2>Yozoi</h2>
+              <p>Get it on</p>
+              <div class="download_playstore">
+                  <div class="playstore">
+                    <img src="https://sattva.life/images/contents_v4/banner-playstore.png" alt="google playstore">
+                  </div>
+                  <div class="playstore">
+                    <img src="https://purp.social/static/media/appStore2.3cbf9f87.png" alt="apple store">
+                  </div>
+              </div>
+              <p class="copy_write">@ 2023 Yozoi Limited</p>
+            </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+.safety_body{
+    /* color: white;
+    background-color: black; */
+    background-color: rgb(240, 240, 240);
+}
+.safety_hero_section {
+    height: 85vh;
+    background: url("https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.safety_hero_section_blur_bg {
+    height: 100%;
+    z-index: 999;
+    /* background-color: rgba(0, 0, 0, 0.366); */
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.262));
+}
+.saftey_merge_shadow {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -99;
+    background: linear-gradient(to top , black ,rgba(0, 0, 0, 0.238));
+}
+#safety_hero_section_heading_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#safety_hero_section_heading_container > h4 {
+    font-size: 50px;
+    color: white;
+}
+.safety_content_after_hero_sec{
+    margin: 60px 0;
+}
+#safety_content_right > h3{
+    font-size: 40px;
+}
+#safety_content_right > p{
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+    /* color: rgb(232, 232, 232); */
+    color: rgb(50, 50, 50);
+}
+.safety_content_left_img_container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.safety_content_left_img_container > div{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    transform: translateY(5px) translateX(-8px);
+}
+.left_safy_img > img{
+    height: 320px;
+    width: 100%;
+}
+.right_safy_img{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+}
+.right_safy_img > div{
+    width: 100%;
+    min-height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.right_safy_img_ch1{
+    background: url('https://yozoi.com/static/media/safety%202.b02a034433d2724ab3ac.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right_safy_img_ch2{
+    background: url('https://yozoi.com/static/media/safety%203.40acf0f7f0be4540c345.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.safety_section_3_title{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+#sefty_section_comment_container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 100px;
+}
+.seafty_features{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.216);
+}
+.readmore{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+}
+.safety_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(67, 67, 67);
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+@media (max-width : 1100px) {
+    .safety_hero_section{
+        height: 50vh;
+    }
+    #safety_hero_section_heading_container > h4 {
+        font-size: 35px;
+    }
+    #safety_content_right > h3{
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #safety_content_right > p{
+        font-size: 15px;
+    }
+    .safety_section_3_title{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .safety_content_left_img_container{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    .safety_content_left_img_container > div{
+        width: 300px;
+        height: 250px;
+        border-radius: 10px;
+        transform: translateY(3px) translateX(-8px);
+    }
+    .left_safy_img > img{
+        height: 250px;
+        width: 100%;
+    }
+    .right_safy_img{
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;   
+    }
+    .right_safy_img > div{
+        width: 100%;
+        min-height: 120px;
+    }
+}
+@media (max-width : 800px) {
+    .safety_hero_section{
+        height: 30vh;
+    }
+    .seafty_features{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .seafty_features > h3{
+        font-size: 20px;
+    }
+    .seafty_features > p{
+        font-size: 15px;
+    }
+}

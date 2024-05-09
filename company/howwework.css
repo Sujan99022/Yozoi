@@ -1,0 +1,211 @@
+.about_hero_section {
+    height: 60vh;
+    background: url("https://wallpaperaccess.com/full/1447062.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.about_hero_section_blur_bg {
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.455);
+}
+#about_hero_section_heading_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#about_hero_section_heading_container > h4 {
+    font-size: 50px;
+    color: white;
+}
+
+.hww_section_1 {
+    margin: 90px 0;
+}
+.hww_first_start_text_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.hww_first_start_text_box > h1 {
+    font-size: 34px;
+}
+.hww_first_start_text_box > p {
+    font-weight: 500;
+}
+
+.hww_first_start_image_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hww_image_container {
+    width: 80%;
+}
+.hww_image_container > img {
+    width: 100%;
+}
+.hww_circle_img_container {
+    position: absolute;
+    width: 48%;
+    border-radius: 50%;
+    bottom: -140px;
+    left: -17px;
+}
+.hww_circle_img_container > img {
+    width: 100%;
+}
+
+.hww_hr_container {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.hww_hr_container > h2 {
+    text-align: center;
+    font-size: 40px;
+}
+.hww_hr_container > div {
+    height: 2px;
+    width: 80px;
+    background-color: black;
+}
+.row_vertical_parent_div {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hww_vertical_line {
+    top: 90px;
+    width: 2px;
+    height: 1410px;
+    position: absolute;
+    background-color: black;
+}
+.hww_row {
+    margin: 80px 0;
+}
+.hww_left_number,
+.hww_right_number {
+    position: relative;
+}
+.hww_left_number > h4 {
+    font-weight: bold;
+    text-align: end;
+    font-size: 28px;
+}
+.hww_right_number > h4 {
+    font-weight: bold;
+    font-size: 28px;
+}
+.hww_right_text {
+    font-weight: 500;
+    padding-left: 20px;
+    text-align: justify;
+}
+.hww_left_text {
+    font-weight: 500;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.hww_left_dot {
+    position: absolute;
+    min-height: 18px;
+    min-width: 18px;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid black;
+    right: -9px;
+    top: 10px;
+}
+.hww_right_dot {
+    position: absolute;
+    min-height: 18px;
+    min-width: 18px;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid black;
+    left: -9px;
+    top: 10px;
+}
+
+@media (max-width: 1100px) {
+    .about_hero_section {
+        height: 50vh;
+    }
+    #about_hero_section_heading_container > h4 {
+        font-size: 35px;
+    }
+    .row_vertical_parent_div {
+        display: none;
+    }
+    .hww_left_number > h4 {
+        text-align: start;
+        padding-bottom: 10px;
+    }
+    .hww_left_dot {
+        display: none;
+    }
+    .hww_right_dot {
+        display: none;
+    }
+    .hww_row {
+        margin: 30px 0;
+    }
+    .hww_hr_container {
+        margin-top: 0;
+        margin-bottom: 10px;
+        gap: 5px;
+    }
+    .hww_hr_container > h2 {
+        font-size: 25px;
+    }
+    .hww_left_number > h4 {
+        font-size: 24px;
+    }
+    .hww_right_number > h4 {
+        font-size: 24px;
+    }
+    .hww_first_start_text_box {
+        margin-top: 80px;
+    }
+    .hww_section_1 {
+        margin-bottom: 20px;
+    }
+    .hww_first_start_text_box > h1 {
+        font-size: 26px;
+    }
+
+    .hww_image_container {
+        width: 80%;
+    }
+    .hww_image_container > img {
+        width: 100%;
+    }
+    .hww_circle_img_container {
+        position: absolute;
+        width: 38%;
+        border-radius: 50%;
+        bottom: -60px;
+        left: 10px;
+    }
+    .hww_circle_img_container > img {
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .about_hero_section {
+        height: 30vh;
+    }
+}

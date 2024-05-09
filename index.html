@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yozoi | Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <script
+      src="https://kit.fontawesome.com/726b0b9ea4.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/000/249/082/original/abstract-business-elegant-wave-background-illustration-vector.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    
+  </head>
+  <body>
+    <section>
+      <nav class="navbar">
+        <div class="container px-4">
+          <div class="left_nav">
+            <a href="./index.html" style="color: white;"><h2 class="logo">Yozoi</h2></a>
+            <div class="company_btn_container rel_ative hide">
+              <button class="nav_btn company_btn">
+                Company <i class="fa-solid fa-caret-down ml-2"></i>
+              </button>
+              <div class="company-slider">
+                <a href="./company/aboutus.html" class="option">About us</a>
+                <a href="./company/ourtech.html" class="option">Our Technology</a>
+                <a href="./company/howwework.html" class="option">How we work</a>
+                <a href="./company/whywork.html" class="option">Why work at Yozoi</a>
+              </div>
+            </div>
+            <a href="safety.html" class="nav_btn safety_btn hide">Safety</a>
+          </div>
+          <div class="mobile_menu" onclick={handleMenu()}>
+            <i class="fa-solid fa-bars menu_icon"></i>
+          </div>
+          <div class="right_nav hide">
+            <div class="services_btn_container rel_ative">
+              <button class="nav_btn services_btn">
+                Services <i class="fa-solid fa-caret-down ml-2"></i>
+              </button>
+              <div class="services-slider">
+                <section class="services_HomeSupportVisits rel_ative">
+                  <a href="./services/homesupport.html" class="option">
+                    Home Support Visits
+                    <i class="fa-solid fa-angles-right r-arrow"></i>
+                  </a>
+                  <div class="services_HomeSupportVisits-slider second_slider">
+                    <a href="/services/homesupport.html#one" class="option">Bedding</a>
+                    <a href="/services/homesupport.html#two" class="option">Cleaning</a>
+                    <a href="/services/homesupport.html#three" class="option">Footcare</a>
+                    <a href="/services/homesupport.html#four" class="option">Gardening</a>
+                    <a href="/services/homesupport.html#five" class="option">Haircare</a>
+                    <a href="/services/homesupport.html#six" class="option">Handyperson</a>
+                    <a href="/services/homesupport.html#seven" class="option">Laundry</a>
+                    <a href="/services/homesupport.html#eight" class="option">Mobility assistance</a>
+                    <a href="/services/homesupport.html#nine" class="option">Pets</a>
+                    <a href="/services/homesupport.html#ten" class="option">Preparing meals</a>
+                    <a href="/services/homesupport.html#eleven" class="option">Shopping meals</a>
+                    <a href="/services/homesupport.html#twelve" class="option">Security assistance</a>
+                  </div>
+                </section>
+                <section class="services_Companionship rel_ative">
+                  <a href="./services/companion.html" class="option">
+                    Companionship
+                    <i class="fa-solid fa-angles-right r-arrow"></i>
+                  </a>
+                  <div class="services_Companionship-slider second_slider">
+                    <a href="./services/companion.html#one" class="option">Accompanying</a>
+                    <a href="./services/companion.html#two" class="option">Cafes & restaurants</a>
+                    <a href="./services/companion.html#three" class="option">Keep fit</a>
+                    <a href="./services/companion.html#four" class="option">Social activities</a>
+                    <a href="./services/companion.html#five" class="option">Vists to medics</a>
+                  </div>
+                </section>
+                <section class="services_Aware rel_ative">
+                  <a href="/services/awarehomesystem.html" class="option">
+                    Aware home system
+                    <i class="fa-solid fa-angles-right r-arrow"></i>
+                  </a>
+                  <div class="services_Aware-slider second_slider">
+                    <a href="/services/awarehomesystem.html#one" class="option">Accident detection</a>
+                    <a href="/services/awarehomesystem.html#two" class="option">Intrution detection</a>
+                    <a href="/services/awarehomesystem.html#three" class="option">Wellbeing security</a>
+                  </div>
+                </section>
+                <section class="services_Child rel_ative">
+                  <a href="/services/childcare.html" class="option">
+                    Child Care <i class="fa-solid fa-angles-right r-arrow"></i>
+                  </a>
+                  <div class="services_Child-slider second_slider">
+                    <a href="/services/childcare.html#one" class="option">Philosophy</a>
+                    <a href="/services/childcare.html#two" class="option">School pick-up & care</a>
+                    <a href="/services/childcare.html#three" class="option">Home care visits</a>
+                    <a href="/services/childcare.html#four" class="option">Activities</a>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <button class="login_btn">Login</button>
+            <button class="signup_btn">Sign up</button>
+          </div>
+        </div>
+      </nav>
+      <div class="lists_container">
+        <div class="lists">
+          <div class="menu_lists menu_lists_company">
+            <p class="menu_safety_btn menu_btn m-0 p-0">
+              Company <i class="fa-solid fa-caret-down ml-2"></i>
+            </p>
+            <div
+              class="menu_icon_options_container menu_company_container_slider"
+            >
+              <li class="menu_icon_options">About us</li>
+              <li class="menu_icon_options">Our technology</li>
+              <li class="menu_icon_options">How we work</li>
+              <li class="menu_icon_options">Wy work at Yozoi</li>
+            </div>
+          </div>
+          <div class="menu_lists">
+            <p class="menu_btn m-0 p-0">Safety</p>
+          </div>
+          <div class="menu_lists menu_lists_services">
+            <p class="menu_services_btn menu_btn m-0 p-0">
+              Services <i class="fa-solid fa-caret-down ml-2 mr-0"></i>
+            </p>
+            <div
+              class="menu_icon_options_container menu_services_container_slider"
+            >
+              <li class="menu_icon_options">Home Visits</li>
+              <li class="menu_icon_options">Companionship</li>
+              <li class="menu_icon_options">Aware home system</li>
+              <li class="menu_icon_options">Child Care</li>
+            </div>
+          </div>
+          <div class="menu_lists">
+            <p class="menu_login_btn p-0 m-0">Login</p>
+          </div>
+          <div class="menu_lists">
+            <button class="menu_signup_btn">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero_section">
+      <div class="row px-5" id="row">
+        <div class="col-lg-1 col-0"></div>
+        <div class="col-lg-3 col-md-4 col-12 mt-3">
+          <div class="hero_section_card" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="hero_section_card_header">
+              Become a
+              <p>service provider</p>
+            </h2>
+            <p class="help_support">Help your local community, work when you like and get paid</p>
+            <button class="sign_up_card_btn">Sign up</button> <br/ >
+            <a href="/company/whywork.html" class="hero_card_link">Learn about service provider</a>
+            <p class="hero_card_download_instruct">Download provider app</p>
+            <div class="google_app_playstore">
+              <p class="g_a_icons">
+                <img src="https://www.pngkey.com/png/full/203-2031321_app-store-icon-play-store-icon-google-logo.png" alt="google playstore">
+              </p>
+              <p class="g_a_icons">
+                <img src="https://hrdcorp.gov.my/wp-content/uploads/2022/08/appstore12.png" alt="app store">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 mt-3">
+          <div class="hero_section_card" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="hero_section_card_header">
+              Book a
+              <p>service</p>
+            </h2>
+            <p class="help_support">Use our on-demand services mobile app to get 24/7 support</p>
+            <button class="sign_up_card_btn">Sign up</button> <br/ >
+            <a href="./learnaboutservices.html" class="hero_card_link">Learn about Yozoi service</a>
+            <p class="hero_card_download_instruct">Download customer app</p>
+            <div class="mb-3 google_app_playstore">
+              <div class="g_a_icons">
+                <img src="https://www.pngkey.com/png/full/203-2031321_app-store-icon-play-store-icon-google-logo.png" alt="google playstore">
+              </div>
+              <div class="g_a_icons">
+                <img src="https://hrdcorp.gov.my/wp-content/uploads/2022/08/appstore12.png" alt="app store">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-0"></div>
+      </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="how_we_work" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <h1 class="how_we_work_text">How we work</h1>
+                <div class="how_we_work_underline"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12 sec_content_how_we_work" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <div class="content_image_container">
+                        <img src="data:image/png;base64,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" alt="img">
+                    </div>
+                    <h4 class="content_bl_img_heading">Mobile application</h4>
+                    <p class="content_bl_img_text">Dedicated customer and service provider apps enabling customers to book services and service providers to provide services. Real-time service tracking, billing, 2-way feedback and ratings.</p>
+                </div>
+                <div class="col-md-4 col-12 sec_content_how_we_work" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <div class="content_image_container">
+                        <img src="data:image/png;base64,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" alt="img">
+                    </div>
+                    <h4 class="content_bl_img_heading">Technology</h4>
+                    <p class="content_bl_img_text">Latest technologies in sensors, big data analytics and artificial intelligence for delivering customised services, monitoring client’s wellbeing and using predictive AI for detection of wellbeing issues and avoidance of emergencies.</p>
+                </div>
+                <div class="col-md-4 col-12 sec_content_how_we_work" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <div class="content_image_container">
+                        <img src="data:image/png;base64,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" alt="img">
+                    </div>
+                    <h4 class="content_bl_img_heading">Safety</h4>
+                    <p class="content_bl_img_text">The technologies integrated in Yozoi app and our operating procedures provide customers and service providers with the best possible standards in safety and security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="how_we_work" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <h1 class="how_we_work_text">Why work as a Yozoi service provider</h1>
+                <div class="how_we_work_underline"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12 sec_content_how_we_work" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <div class="content_image_container">
+                        <img src="data:image/png;base64,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" alt="img">
+                    </div>
+                    <h4 class="content_bl_img_heading">Flexible working</h4>
+                    <p class="content_bl_img_text">Working with Yozoi means that you are in control, you decide when and where you want to work and how you want to fit-in work schedule with your other life commitments.</p>
+                </div>
+                <div class="col-md-4 col-12 sec_content_how_we_work" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <div class="content_image_container">
+                        <img src="data:image/png;base64,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" alt="img">
+                    </div>
+                    <h4 class="content_bl_img_heading">Pay and conditions</h4>
+                    <p class="content_bl_img_text">We aspire to always stay in front of the pack in terms of pay and other incentives for people working with us to help their local communities. This includes guarantee that you will earn more than the National Living Wage and where eligible, holiday pay and a pension plan.</p>
+                </div>
+                <div class="col-md-4 col-12 sec_content_how_we_work" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <div class="content_image_container">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABHNCSVQICAgIfAhkiAAACCVJREFUeF7tm9+V00YUh9kKAhXEWwFQQbwF5ABPeYypIEsF8T7mKVBBtBUAFaBNA0AFKBWwVLD5fcq9OmNb8nqENZrdzJxzj2Vr/ljf/HTn3pF98qCUJAROkoxSBnlQQCcSQQFdQCcikGiYougCOhGBRMMURRfQiQgkGqYouoBORCDRMEXRBXQiAomGKYouoBMRSDRMUXQBnYhAomGKogvoRAQSDVMUfR9B39zcPNF1PZYtZO9PTk4+DV2n1f3J6tKONpgX2l7LahnHV+qP91mWyRUtYM915b/LgEW5MmBfBOYspKK6z/Se+kurQ10gYk0PQfp0YwLfYer3MjfaKUAvDEbjChZQPvsiO5U9lP1qgB8FsIB2cLE+V2qA3cgq2ZtcVD456CFSAgMIFAxoFIgSo+Du6RvYa9kPsvMcFD4paMH8qgt9qgtttqGYS/kLVe9TnSkVxS8HwNJ3Z+oLd9MWtXXg3D0v5lT31KABsNIF1j2gUTITAeidiTBQC70CifJNtr14cv7HngmgHnfHe5uE13p9rHGe9tRN8tHUoLnYT7rAdd/VSHEAea3z1dDVmqLPmTDZR9nF9sRZhAJ0FsaljGjFS6OD2tpzdw1GOlMSnxo0gJ/o4ogkdooA7Z2IsIHqcgcAnAgGhQJ8MJxTfYA7eNqyBtBuljI1aC72rS6QaKIr5p9R1krGrV+FvnUfCVN4Ze1eHWsBnZr+1KB3/LAp7YMuDDW+MYX6dTY6wGoZbVEk9ZiUjQRH/aDutU3ky6lBfW//k4LmywkI4LoF0VwAtzCfO8yVjpeB+QL3jynXr7PSASpuXYb5Zvz2Wd+C+71wjtk+BWjUCTjAhmWhN9ilIAF6sNjk4Oep5xkg/TJRawM9yyJ36GSkAM3tDwyghMVdAlHHzqJmfvw3NejiXwNOuBf2detEHQpjynqTg4798rbYkcgsrS3RwguOLQHh3CvZQobKr3Weycy65AiaJIbvxWIHTA/nUD1gxfU/sJbGL/TeJyVb2DmCrkTrmYeEltTgl0mtSURwJe8MdM1rAT1CX0Ek8XJfxmigAd7Cl7HgonjCQCYrqzK7om2BYx+i3Qyy+PhPHd4asllbVI3iKeyHsEVK26yikBxAE1MTXeCDUeJKdhWm7bYI+pYqANlnbmxiiEDw57SlDz7/qPMbDxXmlncOoAnXSEwAxK1PYX+kMcWSRbL4eR2O2WfudS1qs9Y5FtBbXU9K+LOCDtLxdoEzsA8DtdYGmczSF0AUzF3AHnXnXqwtLmcl+yxb9sXnKeGGY80N2tXHrc8ihqrbYgnLWx12UUb4xS217547Bkq+YCJygsz3nhs0bgB1+v4x+xi89xj5ud5vZ5Q+Ee0kEVRb/Y33cyl3aNxZQQfqXei4amfekg8pFODE06d9X94VHID2RbWmL31+mRPsLED3KTII805DlxJMDhODH2aSuAOWekHVfndc6BzvsyhZgA6iC6C2rsL2PIhIur2OAPJKx+x57EQWwQJbQIcSsxiZaIFJR6FdohFsIjW4A2uHggF9qbq8toWMkrYxmWVKqc+uaIGpdcHc7kMuYqlza6sDG7K/tS+aBpmohckiYcEeDS2iKeGGY+UAGlXiBsjkgEQG+Nnj5tvABKr3nxYQybAYVre1TXl+dtCmyEavZHthKAeo7rHVEBSBZluVPene6CQlzH1j5QKa1HuNEs1wBaTRJDFtWm6+l8mgfHNfbokLO3dn+qzOBez298gCdB8cAWQXjs2j8yACCau2P4axeJtNqayijDsBOogcfA/EF7vw+xOdkKRwJyyKovfcy6ZUNocI1RqvGiQrwGQzaWUwWfCAy3vaUdjHJgqp9ww1+6lZXYeA8psMfsXk257hDh0wsXBT/4OA+oPapc6xhdq76TQ72a0vMDdoMj/2JFBuJWO3rjfSsOyxAb6HfkGyA+yi6CF1WcSAmv3ntMAmgiC13gFnW6dtzB1EHaiez7gbaLOx3ZqLsudW9FogCONQNPCuTaX4YdwCUccGcIsyyCTb+oA0tQOcUJBzKB+/3e3g2R4I52iTfDLmBk2CAkj8cAibz4k0MPx4ZXAcLO9p08F25Rp0j8tJZvixDaWdONkyGI+xsSufNO/n2K+zguZiLPIAMi6EV9wGr65UoAE8/M0d0Qeuwp94txMQFgPuk0Xff8h+8TEMOH0D/qvGnPTfALODNqBPTFkAARoLYrUFjjorAwN06qF8/u01mH6by2BSfpb9bX2eejhprgo3s9ierGO+zwJ0D2w+qmVke7xuFFMr4Cnsc7R3QF8xn87Pxp7bYspTnDaMtHE5ZrJQ/2QlG9B20Si0krGD56XWAQ9bcRfRxWJ1FlX63Sm2KTV5eJgV6EBlKx2vZYR6XnAVqA9jG7U5hLrtmXSuImzjqb76mpzD5AMcAmNAaagb4NzSIfCwOi5jZyEMKtAHT156r9NSfZ60L8d+z0PbZQt6S3mAIELAhqAPXTOhWy9IgebuGPx73qEQD6l3J0BvQW9VasbxdkHl7f/OBbLm5B7Q3A0bzykPgTamzp0DHXORttDRpJIB1V0NPn6fy4kZ5qC69x00riGMYBxK+0DhIEJHqnSvQTsjiy5wMwtZfWjEciTGbTf/C9DHBDa2rwJ6LLnIdgV0JLCx1QvoseQi2xXQkcDGVi+gx5KLbFdARwIbW72AHksusl0BHQlsbPUCeiy5yHYFdCSwsdUL6LHkItsV0JHAxlYvoMeSi2xXQEcCG1u9gB5LLrJdAR0JbGz1Anosuch2BXQksLHVC+ix5CLb/Qtt5kqIyaMluwAAAABJRU5ErkJggg==" alt="img">
+                    </div>
+                    <h4 class="content_bl_img_heading">Training and support</h4>
+                    <p class="content_bl_img_text">The Yozoi app continuously watches the services you do and how you perform them, this enables us to give you support in real-time and assess training requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-2 mt-md-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <h3 class="footer_header">Learn more</h3>
+              <p class="footer_links">About us</p>
+              <p class="footer_links">Terms of service</p>
+              <p class="footer_links">Privacy policy</p>
+            </div>
+            <div class="col-md-4 col-12">
+              <h3 class="footer_header">Stay Connected</h3>
+                <div class="footer_contact_image_container">
+                    <div class="social_media">
+                        <img class="social_media_images" src="https://th.bing.com/th/id/OIP.qAvEb6dwa1l715giSS_qBAHaHa?rs=1&pid=ImgDetMain" alt="img">
+                    </div>    
+                    <div class="social_media">
+                        <img class="social_media_images" src="https://th.bing.com/th/id/OIP.o14JzjLzTuJVajpifYmsnQAAAA?rs=1&pid=ImgDetMain" alt="img">
+                    </div>    
+                    <div class="social_media">
+                        <img class="social_media_images" src="https://th.bing.com/th/id/OIP._oZTXnKqU0BjPIMZdPf2fwHaHa?rs=1&pid=ImgDetMain" alt="img">
+                    </div>    
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <h3 class="footer_header">Contact us</h3>
+              <p class="footer_links"><i class="fa-solid fa-envelope mr-2"></i> info@yozoi.com</p>
+              <p class="footer_links"><i class="fa-solid fa-location-arrow mr-2"></i> Yozoi Limited
+                124 City Road
+                London EC4V 2NX
+                United Kingdom</p>
+            </div>
+            <div class="col-12 footer_last_sec mt-3">
+              <h2>Yozoi</h2>
+              <p>Get it on</p>
+              <div class="download_playstore">
+                  <div class="playstore">
+                    <img src="https://sattva.life/images/contents_v4/banner-playstore.png" alt="google playstore">
+                  </div>
+                  <div class="playstore">
+                    <img src="https://purp.social/static/media/appStore2.3cbf9f87.png" alt="apple store">
+                  </div>
+              </div>
+              <p class="copy_write">@ 2023 Yozoi Limited</p>
+            </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>

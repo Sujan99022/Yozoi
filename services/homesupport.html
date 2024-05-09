@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yozoi | Home Visits</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <script
+      src="https://kit.fontawesome.com/726b0b9ea4.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="./homesupport.css" />
+  </head>
+  <body class="safety_body">
+    <!-- Navbar -->
+    <section>
+        <nav class="navbar">
+          <div class="container px-4">
+            <div class="left_nav">
+              <a href="../index.html" style="color: white;"><h2 class="logo">Yozoi</h2></a>
+              <div class="company_btn_container rel_ative hide">
+                <button class="nav_btn company_btn">
+                  Company <i class="fa-solid fa-caret-down ml-2"></i>
+                </button>
+                <div class="company-slider">
+                  <a href="../company/aboutus.html" class="option">About us</a>
+                  <a href="../company/ourtech.html" class="option">Our Technology</a>
+                  <a href="../company/howwework.html" class="option">How we work</a>
+                  <a href="../company/whywork.html" class="option" >Why work at Yozoi</a>
+                </div>
+              </div>
+              <a href="../safety.html"><button class="nav_btn safety_btn hide">Safety</button></a>
+            </div>
+            <div class="mobile_menu" onclick={handleMenu()}>
+              <i class="fa-solid fa-bars menu_icon"></i>
+            </div>
+            <div class="right_nav hide">
+              <div class="services_btn_container rel_ative">
+                <button class="nav_btn services_btn">
+                  Services <i class="fa-solid fa-caret-down ml-2"></i>
+                </button>
+                <div class="services-slider">
+                  <section class="services_HomeSupportVisits rel_ative">
+                    <a href="./homesupport.html" class="option">
+                      Home Support Visits
+                      <i class="fa-solid fa-angles-right r-arrow"></i>
+                    </a>
+                    <div class="services_HomeSupportVisits-slider second_slider">
+                      <a href="#one" class="option">Bedding</a>
+                      <a href="#two" class="option">Cleaning</a>
+                      <a href="#three" class="option">Footcare</a>
+                      <a href="#four" class="option">Gardening</a>
+                      <a href="#five" class="option">Haircare</a>
+                      <a href="#six" class="option">Handyperson</a>
+                      <a href="#seven" class="option">Laundry</a>
+                      <a href="#eight" class="option">Mobility assistance</a>
+                      <a href="#nine" class="option">Pets</a>
+                      <a href="#ten" class="option">Preparing meals</a>
+                      <a href="#eleven" class="option">Shopping meals</a>
+                      <a href="#twelve" class="option">Security assistance</a>
+                    </div>
+                  </section>
+                  <section class="services_Companionship rel_ative">
+                    <a href="/services/companion.html" class="option">
+                      Companionship
+                      <i class="fa-solid fa-angles-right r-arrow"></i>
+                    </a>
+                    <div class="services_Companionship-slider second_slider">
+                      <a href="/services/companion.html#one" class="option">Accompanying</a>
+                      <a href="/services/companion.html#two" class="option">Cafes & restaurants</a>
+                      <a href="/services/companion.html#three" class="option">Keep fit</a>
+                      <a href="/services/companion.html#four" class="option">Social activities</a>
+                      <a href="/services/companion.html#five" class="option">Vists to medics</a>
+                    </div>
+                  </section>
+                  <section class="services_Aware rel_ative">
+                    <a href="/services/awarehomesystem.html" class="option">
+                      Aware home system
+                      <i class="fa-solid fa-angles-right r-arrow"></i>
+                    </a>
+                    <div class="services_Aware-slider second_slider">
+                      <a href="/services/awarehomesystem.html#one" class="option">Accident detection</a>
+                      <a href="/services/awarehomesystem.html#two" class="option">Intrution detection</a>
+                      <a href="/services/awarehomesystem.html#three" class="option">Wellbeing security</a>
+                    </div>
+                  </section>
+                  <section class="services_Child rel_ative">
+                    <a href="/services/childcare.html" class="option">
+                      Child Care <i class="fa-solid fa-angles-right r-arrow"></i>
+                    </a>
+                    <div class="services_Child-slider second_slider">
+                      <a href="/services/childcare.html#one" class="option">Philosophy</a>
+                      <a href="/services/childcare.html#two" class="option">School pick-up & care</a>
+                      <a href="/services/childcare.html#three" class="option">Home care visits</a>
+                      <a href="/services/childcare.html#four" class="option">Activities</a>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <button class="login_btn">Login</button>
+              <button class="signup_btn">Sign up</button>
+            </div>
+          </div>
+        </nav>
+        <div class="lists_container">
+          <div class="lists">
+            <div class="menu_lists menu_lists_company">
+              <p class="menu_safety_btn menu_btn m-0 p-0">
+                Company <i class="fa-solid fa-caret-down ml-2"></i>
+              </p>
+              <div
+                class="menu_icon_options_container menu_company_container_slider"
+              >
+                <li class="menu_icon_options">About us</li>
+                <li class="menu_icon_options">Our technology</li>
+                <li class="menu_icon_options">How we work</li>
+                <li class="menu_icon_options">Wy work at Yozoi</li>
+              </div>
+            </div>
+            <div class="menu_lists">
+              <p class="menu_btn m-0 p-0">Safety</p>
+            </div>
+            <div class="menu_lists menu_lists_services">
+              <p class="menu_services_btn menu_btn m-0 p-0">
+                Services <i class="fa-solid fa-caret-down ml-2 mr-0"></i>
+              </p>
+              <div
+                class="menu_icon_options_container menu_services_container_slider"
+              >
+                <li class="menu_icon_options">Home Visits</li>
+                <li class="menu_icon_options">Companionship</li>
+                <li class="menu_icon_options">Aware home system</li>
+                <li class="menu_icon_options">Child Care</li>
+              </div>
+            </div>
+            <div class="menu_lists">
+              <p class="menu_login_btn p-0 m-0">Login</p>
+            </div>
+            <div class="menu_lists">
+              <button class="menu_signup_btn">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Navbar End -->
+
+
+      <section>
+        <div class="hsv_hero_section">
+          <div class="hsv_merge_shadow"></div>
+            <div class="hsv_hero_section_blur_bg">
+                <div class="container" id="hsv_hero_section_heading_container">
+                  <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">Services</h4>
+                </div> 
+            </div>  
+        </div>
+    </section>
+
+    <section class="px-3 px-md-0">
+        <div class="container">
+            <div class="hsv_heading_container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <h2 class="hsv_heading">Home support visits</h2>
+                <div class="hr_div"></div>
+            </div>
+            <div class="row mt-5" id="one">
+                <div class="col-md-6 col-12 order-1 order-md-0 hsv_img_col" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <div class="hsv_image_div">
+                        <img src="https://yozoi.com/static/media/bedding.bf3f6b621d359f445898.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-12 order-0 order-md-1 hsv_text_col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="hsv_col_heading">Bedding</h2>
+                    <p>Change of bedding in the customer’s home with fresh bedding provided by the customer. Please also request laundry service if you require bedding to be laundered and dried either in your home or taken away and delivered back after laundering.</p>
+                </div>
+            </div>
+            <div class="row mt-5" id="two">
+                <div class="col-6 col-md-6 col-12 hsv_text_col" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="hsv_col_heading">Cleaning</h2>
+                    <p>Our service providers can clean all in-door areas of your home including vacuuming, mopping, dusting, and polishing. Outdoor cleaning services are also available including patios, driveways, and gardens.</p>
+                </div>
+                <div class="col-md-6 col-12 hsv_img_col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <div class="hsv_image_div">
+                        <img src="https://yozoi.com/static/media/foot%20care.0620782a00f6b96a2f71.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" id="three">
+                <div class="col-md-6 col-12 order-1 order-md-0 hsv_img_col" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <div class="hsv_image_div">
+                        <img src="https://yozoi.com/static/media/cleaning.ec381cc3802b3327dbe7.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-12 order-0 order-md-1 hsv_text_col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="hsv_col_heading">Footcare</h2>
+                    <p>Cutting nails, hydrating, and massaging feet for improved circulation.</p>
+                </div>
+            </div>
+            <div class="row mt-5" id="four">
+                <div class="col-6 col-md-6 col-12 hsv_text_col" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="hsv_col_heading">Gardening</h2>
+                    <p>All routine garden maintenance work such as cutting grass, trimming hedges and plants, and clearing garden waste.</p>
+                </div>
+                <div class="col-md-6 col-12 hsv_img_col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <div class="hsv_image_div">
+                        <img src="https://yozoi.com/static/media/gardening.9d5a18759b31d7e25478.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" id="five">
+                <div class="col-md-6 col-12 order-1 order-md-0 hsv_img_col" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <div class="hsv_image_div">
+                        <img src="https://yozoi.com/static/media/hair%20care.12f82a6d94285635e35b.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-12 order-0 order-md-1 hsv_text_col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="hsv_col_heading">Haircare</h2>
+                    <p>Full barber services for men and hair saloon services for ladies in the comfort of your own home.</p>
+                </div>
+            </div>
+            <div class="row mt-5" id="six">
+                <div class="col-6 col-md-6 col-12 hsv_text_col" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="hsv_col_heading">Handyperson</h2>
+                    <p>Routine home maintenance such as changing light bulbs, batteries, and fuses. Installing fixture, mobility equipment, goods such as new fridges, toasters, kettle and so on. Please specify as accurately as possible in your service request.</p>
+                </div>
+                <div class="col-md-6 col-12 hsv_img_col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <div class="hsv_image_div">
+                        <img src="https://yozoi.com/static/media/handy%20person.23708647b5e868a5a86d.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" id="seven">
+                <div class="col-md-6 col-12 order-1 order-md-0 hsv_img_col" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <div class="hsv_image_div">
+                        <img src="https://yozoi.com/static/media/laundry.bfadacd17dce6579bae1.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-12 order-0 order-md-1 hsv_text_col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="hsv_col_heading">Laundry</h2>
+                    <p>Our service providers can do all your laundry either in your own home or take it away for laundering and delivery back to you. Please specify in your service request.</p>
+                </div>
+            </div>
+            <div class="row mt-5" id="eight">
+                <div class="col-6 col-md-6 col-12 hsv_text_col" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="hsv_col_heading">Mobility assistance</h2>
+                    <p>We can provide transport and accompany you to appointments such as visits to the doctor, dentist or pharmacy as well as visits to cafes, restaurants and community events.</p>
+                </div>
+                <div class="col-md-6 col-12 hsv_img_col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <div class="hsv_image_div">
+                        <img src="https://yozoi.com/static/media/mobility%20assistance.4f01405180be34da0baf.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" id="nine">
+                <div class="col-md-6 col-12 order-1 order-md-0 hsv_img_col" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <div class="hsv_image_div">
+                        <img src="https://yozoi.com/static/media/pets.a288742553b178589c1e.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-12 order-0 order-md-1 hsv_text_col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="hsv_col_heading">Pets</h2>
+                    <p>Feeding pets, walking dogs and visits to the vet.</p>
+                </div>
+            </div>
+            <div class="row mt-5" id="ten">
+                <div class="col-6 col-md-6 col-12 hsv_text_col" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="hsv_col_heading">Preparing meals</h2>
+                    <p>Do you need a nutritional plan to optimise health or need a service to prepare and serve your meals. Yozoi service provider can help make a nutritional plan, cook meals in you home daily or as and when you need, serve you food and tidy up kitchen. Alternatively, home cooked meals can be delivered and served to you at home. Contact us to assess and specify your needs.</p>
+                </div>
+                <div class="col-md-6 col-12 hsv_img_col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <div class="hsv_image_div">
+                        <img src="https://yozoi.com/static/media/preparing%20meals.c67ae9d6204d743c1349.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" id="eleven">
+                <div class="col-md-6 col-12 order-1 order-md-0 hsv_img_col" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <div class="hsv_image_div">
+                        <img src="https://yozoi.com/static/media/shopping%20assistance.e84030f0a263be1ec646.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-12 order-0 order-md-1 hsv_text_col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="hsv_col_heading">Shopping assistance</h2>
+                    <p>We can provide transport and accompany you on shopping trips to the supermarkets or other outlets. Alternatively, our service providers can do the shopping for you, deliver to your home and store in your home to fit with your requirements.</p>
+                </div>
+            </div>
+            <div class="row my-5 pb-5" id="twelve">
+                <div class="col-6 col-md-6 col-12 hsv_text_col" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="hsv_col_heading">Security assistance</h2>
+                    <p>Do you need a trusted person to visit to check around and in your house or be present whilst you use the bathroom in case you have an accident? Yozoi can provide such assistance 24/7 and every day of the year whenever you need it.</p>
+                </div>
+                <div class="col-md-6 col-12 hsv_img_col" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <div class="hsv_image_div">
+                        <img src="https://yozoi.com/static/media/security.5db0db83a13cb27cf78e.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-2 mt-md-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <h3 class="footer_header">Learn more</h3>
+              <p class="footer_links">About us</p>
+              <p class="footer_links">Terms of service</p>
+              <p class="footer_links">Privacy policy</p>
+            </div>
+            <div class="col-md-4 col-12">
+              <h3 class="footer_header">Stay Connected</h3>
+                <div class="footer_contact_image_container">
+                    <div class="social_media">
+                        <img class="social_media_images" src="https://th.bing.com/th/id/OIP.qAvEb6dwa1l715giSS_qBAHaHa?rs=1&pid=ImgDetMain" alt="img">
+                    </div>    
+                    <div class="social_media">
+                        <img class="social_media_images" src="https://th.bing.com/th/id/OIP.o14JzjLzTuJVajpifYmsnQAAAA?rs=1&pid=ImgDetMain" alt="img">
+                    </div>    
+                    <div class="social_media">
+                        <img class="social_media_images" src="https://th.bing.com/th/id/OIP._oZTXnKqU0BjPIMZdPf2fwHaHa?rs=1&pid=ImgDetMain" alt="img">
+                    </div>    
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <h3 class="footer_header">Contact us</h3>
+              <p class="footer_links"><i class="fa-solid fa-envelope mr-2"></i> info@yozoi.com</p>
+              <p class="footer_links"><i class="fa-solid fa-location-arrow mr-2"></i> Yozoi Limited
+                124 City Road
+                London EC4V 2NX
+                United Kingdom</p>
+            </div>
+            <div class="col-12 footer_last_sec mt-3">
+              <h2>Yozoi</h2>
+              <p>Get it on</p>
+              <div class="download_playstore">
+                  <div class="playstore">
+                    <img src="https://sattva.life/images/contents_v4/banner-playstore.png" alt="google playstore">
+                  </div>
+                  <div class="playstore">
+                    <img src="https://purp.social/static/media/appStore2.3cbf9f87.png" alt="apple store">
+                  </div>
+              </div>
+              <p class="copy_write">@ 2023 Yozoi Limited</p>
+            </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../main.js"></script>
+  </body>
+</html>

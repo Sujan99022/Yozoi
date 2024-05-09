@@ -1,0 +1,555 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.2s ease-in-out;
+}
+body {
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+a:hover{
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 18px 0;
+    height: 80px;
+    z-index: 9999;
+}
+.logo {
+    margin-right: 16px;
+    margin-bottom: 0;
+}
+.left_nav {
+    display: flex;
+    align-items: center;
+}
+.right_nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.mobile_menu {
+    display: none;
+}
+.drop-down_company {
+    max-width: min-content;
+}
+.login_btn {
+    background: black;
+    color: white;
+    border: none;
+}
+.login_btn:hover {
+    color: rgb(223, 222, 222);
+}
+.lists_container {
+    display: none;
+}
+.signup_btn {
+    border-radius: 50px;
+    padding: 5px 10px;
+    padding-bottom: 8px;
+    margin: 0;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.nav_btn {
+    background: black;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 1.1vw;
+}
+.nav_btn:active{
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+.nav_btn:focus{
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+.nav_btn:hover {
+    background: white;
+    color: black;
+}
+.company-slider {
+    display: none;
+    top: 40px;
+    left: 4px;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    color: rgb(137, 137, 137);
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.126);
+}
+.option {
+    display: inline-block;
+    padding: 10px 28px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1vw;
+    color: rgb(97, 97, 97);
+    list-style: none;
+    text-wrap: nowrap;
+}
+.option:hover {
+    color: black;
+    background-color: rgb(239, 239, 239);
+}
+.rel_ative {
+    position: relative;
+}
+.company_btn_container:hover .company-slider {
+    display: block;
+}
+.services-slider {
+    display: none;
+    top: 39px;
+    left: 4px;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    color: black;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.126);
+}
+.services_btn_container:hover .services-slider {
+    display: block;
+}
+.r-arrow {
+    font-size: 0.6vw;
+}
+.second_slider {
+    display: none;
+    position: absolute;
+    left: 190px;
+    top: -10px;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.163);
+}
+.services_HomeSupportVisits:hover .services_HomeSupportVisits-slider {
+    display: block;
+}
+.services_Companionship:hover .services_Companionship-slider {
+    display: block;
+}
+.services_Aware:hover .services_Aware-slider {
+    display: block;
+}
+.services_Child:hover .services_Child-slider {
+    display: block;
+}
+
+/*Hero Section*/
+#row {
+    padding: 80px 20px;
+    background-color: rgba(0, 0, 0, 0.366);
+}
+.hero_section {
+    z-index: -999;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: hero 10s infinite 0s linear normal;
+}
+@keyframes hero {
+    0% {
+        background-image: url("https://images.pexels.com/photos/8441774/pexels-photo-8441774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    50% {
+        background-image: url("https://images.pexels.com/photos/7490819/pexels-photo-7490819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    100% {
+        background-image: url("https://images.pexels.com/photos/8441774/pexels-photo-8441774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+}
+.hero_section_card {
+    color: black;
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.389);
+    padding: 20px;
+}
+.help_support {
+    font-weight: 500;
+    font-size: 13px;
+    flex-wrap: nowrap;
+}
+.sign_up_card_btn {
+    color: white;
+    padding: 5px 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    background: black;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.hero_card_link {
+    font-size: 13px;
+    margin-top: 20px;
+    font-weight: 500;
+    display: inline;
+    cursor: pointer;
+    color: black;
+    border-bottom: 1px solid black;
+}
+.hero_card_link:hover{
+    color: black;
+    border-bottom: 1px solid black;
+}
+.hero_section_card_header {
+    margin-top: 30px;
+    flex-wrap: nowrap;
+}
+.hero_card_download_instruct {
+    margin-top: 16px;
+    font-weight: bold;
+}
+.google_app_playstore {
+    display: flex;
+    gap: 12px;
+}
+.g_a_icons {
+    height: 35px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+}
+.g_a_icons > img {
+    height: 100%;
+    width: 100%;
+}
+/* How we work */
+.how_we_work {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+.how_we_work_text {
+    font-size: 40px;
+}
+.how_we_work_underline {
+    width: 70px;
+    height: 2px;
+    background-color: black;
+    border-radius: 50px;
+}
+.content_image_container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    border-radius: 100%;
+    margin-bottom: 16px;
+}
+.sec_content_how_we_work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.content_bl_img_text {
+    text-align: center;
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+}
+.footer_header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+.footer_links {
+    margin: 0;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(240, 240, 240);
+}
+.footer_contact_image_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social_media {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background-color: white;
+    overflow: hidden;
+    cursor: pointer;
+}
+.social_media_images {
+    width: 100%;
+}
+.footer_last_sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer_last_sec > h2 {
+    font-size: 35px;
+}
+.download_playstore {
+    display: flex;
+    gap: 15px;
+}
+.playstore {
+    cursor: pointer;
+    height: 50px;
+    width: 160px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.playstore > img {
+    height: 100%;
+    width: 100%;
+}
+.copy_write {
+    color: rgb(229, 229, 229);
+}
+
+@media (max-width: 1400px) {
+    .hero_section_card_header {
+        font-size: 20px;
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
+}
+@media (max-width: 1100px) {
+    .nav_btn {
+        font-size: 1.8vw;
+    }
+    .option {
+        font-size: 1.5vw;
+    }
+    .second_slider {
+        left: 180px;
+    }
+
+    .help_support {
+        font-weight: 500;
+        font-size: 10px;
+        flex-wrap: nowrap;
+    }
+    .sign_up_card_btn {
+        color: white;
+        padding: 5px 25px;
+        border-radius: 5px;
+        font-weight: 500;
+        padding-bottom: 8px;
+        background: black;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .hero_card_link {
+        font-size: 10px;
+        margin-top: 20px;
+        font-weight: 500;
+        display: inline;
+        border-bottom: 1px solid black;
+    }
+    .hero_card_download_instruct {
+        margin-top: 14px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .google_app_playstore {
+        display: flex;
+        gap: 8px;
+    }
+    .g_a_icons {
+        padding: 4px 8px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 780px) {
+    .hide {
+        display: none;
+    }
+    .mobile_menu {
+        display: block;
+    }
+    .menu_icon {
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .lists_container {
+        justify-content: center;
+    }
+    .lists {
+        z-index: 999999;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 80px;
+        background-color: rgb(58, 58, 58);
+        width: 80%;
+        display: flex;
+        gap: 0;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.539);
+    }
+    .menu_lists {
+        margin-top: 0;
+        cursor: pointer;
+    }
+    .menu_btn {
+        font-size: 18px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        outline: none;
+        border: none;
+    }
+    .hide_menu_slider {
+        display: none;
+    }
+    .menu_icon_options_container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        font-size: 14px;
+    }
+    .menu_icon_options {
+        list-style: none;
+        color: rgb(191, 191, 191);
+        margin: 6px 0;
+        text-align: center;
+    }
+    .menu_company_container_slider {
+        display: none;
+    }
+    .menu_services_container_slider {
+        display: none;
+    }
+    .menu_login_btn {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 18px;
+    }
+    .menu_signup_btn {
+        font-size: 18px;
+        color: black;
+        padding: 5px 10px;
+        border-radius: 50px;
+        background-color: white;
+    }
+    .menu_lists_company:hover .menu_company_container_slider {
+        display: flex;
+    }
+    .menu_lists_services:hover .menu_services_container_slider {
+        display: flex;
+    }
+
+    .help_support {
+        font-weight: 500;
+        font-size: 13px;
+        flex-wrap: nowrap;
+    }
+    .sign_up_card_btn {
+        color: white;
+        padding: 5px 25px;
+        border-radius: 5px;
+        font-weight: 500;
+        padding-bottom: 8px;
+        background: black;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .hero_card_link {
+        font-size: 13px;
+        margin-top: 20px;
+        font-weight: 500;
+        display: inline;
+        border-bottom: 1px solid black;
+    }
+    .hero_section_card_header {
+        margin-top: 30px;
+        font-size: 30px;
+        flex-wrap: nowrap;
+    }
+    .hero_card_download_instruct {
+        margin-top: 16px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .google_app_playstore {
+        display: flex;
+        gap: 12px;
+    }
+    .g_a_icons {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+    }
+    .how_we_work_text {
+        font-size: 22px;
+    }
+    .how_we_work {
+        margin: 20px 0;
+    }
+    .content_bl_img_heading {
+        font-size: 19px;
+    }
+    .content_bl_img_text {
+        font-size: 14px;
+        line-height: 1.1rem;
+        font-weight: 500;
+    }
+}
